@@ -56,11 +56,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
             {categories.slice(0, 6).map((c) => (
               <li key={c.slug}>
-                <Link
-                  to="/categories/$slug"
-                  params={{ slug: c.slug }}
-                  className="transition-opacity hover:text-primary-foreground"
-                >
+                <Link to="/categories" className="transition-opacity hover:text-primary-foreground">
                   {c.name}
                 </Link>
               </li>

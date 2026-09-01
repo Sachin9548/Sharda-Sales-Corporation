@@ -16,6 +16,30 @@ import catBakery from "@/assets/cat-bakery.jpg";
 import catBeverages from "@/assets/cat-beverages.jpg";
 import catPackaging from "@/assets/cat-packaging.jpg";
 import catTesting from "@/assets/cat-testing.jpg";
+import catFlavours2 from "@/assets/cat-flavours-2.jpg";
+import catFlavours3 from "@/assets/cat-flavours-3.jpg";
+import catColours2 from "@/assets/cat-colours-2.jpg";
+import catColours3 from "@/assets/cat-colours-3.jpg";
+import catPremix2 from "@/assets/cat-premix-2.jpg";
+import catPremix3 from "@/assets/cat-premix-3.jpg";
+import catCocoa2 from "@/assets/cat-cocoa-2.jpg";
+import catCocoa3 from "@/assets/cat-cocoa-3.jpg";
+import catDairy2 from "@/assets/cat-dairy-2.jpg";
+import catDairy3 from "@/assets/cat-dairy-3.jpg";
+import catAdditives2 from "@/assets/cat-additives-2.jpg";
+import catAdditives3 from "@/assets/cat-additives-3.jpg";
+import catGums2 from "@/assets/cat-gums-2.jpg";
+import catGums3 from "@/assets/cat-gums-3.jpg";
+import catJams2 from "@/assets/cat-jams-2.jpg";
+import catJams3 from "@/assets/cat-jams-3.jpg";
+import catBakery2 from "@/assets/cat-bakery-2.jpg";
+import catBakery3 from "@/assets/cat-bakery-3.jpg";
+import catBeverages2 from "@/assets/cat-beverages-2.jpg";
+import catBeverages3 from "@/assets/cat-beverages-3.jpg";
+import catPackaging2 from "@/assets/cat-packaging-2.jpg";
+import catPackaging3 from "@/assets/cat-packaging-3.jpg";
+import catTesting2 from "@/assets/cat-testing-2.jpg";
+import catTesting3 from "@/assets/cat-testing-3.jpg";
 
 export const company = {
   name: "Sharda Sales Corporation",
@@ -46,6 +70,7 @@ export type Category = {
   short: string;
   description: string;
   image: string;
+  images: string[];
 };
 
 export const categories: Category[] = [
@@ -56,6 +81,7 @@ export const categories: Category[] = [
     description:
       "A complete range of food flavours and emulsions for bakery, beverage, dairy and confectionery applications, sourced from leading manufacturers such as Keva and Akras.",
     image: catFlavours,
+    images: [catFlavours, catFlavours2, catFlavours3],
   },
   {
     slug: "food-colours",
@@ -64,6 +90,7 @@ export const categories: Category[] = [
     description:
       "Permitted food colours in powder and liquid form, including Idacol synthetic colours and liquid caramel colour for bakery, beverage and confectionery use.",
     image: catColours,
+    images: [catColours, catColours2, catColours3],
   },
   {
     slug: "bakery-premixes",
@@ -72,6 +99,7 @@ export const categories: Category[] = [
     description:
       "Cake mixes, bread improvers, gluten and bakery bases that help bakeries maintain consistent quality batch after batch.",
     image: catPremix,
+    images: [catPremix, catPremix2, catPremix3],
   },
   {
     slug: "chocolates-compounds-cocoa",
@@ -80,6 +108,7 @@ export const categories: Category[] = [
     description:
       "Cocoa powders, dark and milk compounds, chocolate pastes and syrups for bakeries, confectioners and dessert manufacturers.",
     image: catCocoa,
+    images: [catCocoa, catCocoa2, catCocoa3],
   },
   {
     slug: "dairy-fats-oils",
@@ -88,6 +117,7 @@ export const categories: Category[] = [
     description:
       "Skimmed milk powder, whey powder, condensed milk, non-dairy whipping cream, bakery fats and oils from Amul, Milky Mist, Paras, Nova and Adani Wilmar.",
     image: catDairy,
+    images: [catDairy, catDairy2, catDairy3],
   },
   {
     slug: "food-additives-chemicals",
@@ -96,6 +126,7 @@ export const categories: Category[] = [
     description:
       "Food grade acids, preservatives, glycerin and specialty chemicals supplied in sealed manufacturer packing with full traceability.",
     image: catAdditives,
+    images: [catAdditives, catAdditives2, catAdditives3],
   },
   {
     slug: "gums-hydrocolloids",
@@ -104,6 +135,7 @@ export const categories: Category[] = [
     description:
       "Xanthan gum, pectin, native and modified starches and thickening systems for texture, stability and shelf life.",
     image: catGums,
+    images: [catGums, catGums2, catGums3],
   },
   {
     slug: "crushes-jams-glazes",
@@ -112,6 +144,7 @@ export const categories: Category[] = [
     description:
       "Fruit jams, jellies, crushes and glazes used in cakes, pastries, desserts and beverage preparations.",
     image: catJams,
+    images: [catJams, catJams2, catJams3],
   },
   {
     slug: "bakery-confectionery-ingredients",
@@ -120,6 +153,7 @@ export const categories: Category[] = [
     description:
       "Core bakery inputs including baking powder, yeast, liquid glucose, maltodextrin, malt extract and custard powder.",
     image: catBakery,
+    images: [catBakery, catBakery2, catBakery3],
   },
   {
     slug: "beverages-sdc",
@@ -128,6 +162,7 @@ export const categories: Category[] = [
     description:
       "Soft drink concentrates, beverage bases and allied ingredients for beverage manufacturers and bottlers.",
     image: catBeverages,
+    images: [catBeverages, catBeverages2, catBeverages3],
   },
   {
     slug: "packaging-materials",
@@ -136,6 +171,7 @@ export const categories: Category[] = [
     description:
       "Bakery packaging consumables including boxes, cake boards, containers and films to support day-to-day production.",
     image: catPackaging,
+    images: [catPackaging, catPackaging2, catPackaging3],
   },
   {
     slug: "testing-kits-misc",
@@ -144,6 +180,7 @@ export const categories: Category[] = [
     description:
       "Food testing kits, fragrances and assorted allied products required by food, bakery and pharmaceutical units.",
     image: catTesting,
+    images: [catTesting, catTesting2, catTesting3],
   },
 ];
 

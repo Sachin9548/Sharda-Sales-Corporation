@@ -3,14 +3,13 @@ import { ArrowRight, BadgeCheck, Mail, MessageCircle, Phone, Quote } from "lucid
 
 import { Button } from "@/components/ui/button";
 import { EnquiryDialog } from "@/components/enquiry-dialog";
-import { ProductCard } from "@/components/product-card";
+import { CategoryCard } from "@/components/category-card";
 import { PageHero, SectionHeading } from "@/components/page-hero";
 import {
   brands,
   categories,
   company,
   industries,
-  products,
   testimonials,
   whatsappLink,
   whyChooseUs,
@@ -38,8 +37,6 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const featured = products.filter((p) => p.featured).slice(0, 8);
-
   return (
     <>
       {/* Hero */}
@@ -148,27 +145,7 @@ function HomePage() {
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {categories.slice(0, 8).map((c) => (
-              <Link
-                key={c.slug}
-                to="/categories/$slug"
-                params={{ slug: c.slug }}
-                className="group overflow-hidden rounded-xl border border-border bg-card shadow-soft transition-shadow hover:shadow-lift"
-              >
-                <div className="aspect-4/3 overflow-hidden">
-                  <img
-                    src={c.image}
-                    alt={c.name}
-                    width={900}
-                    height={700}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-sm font-semibold leading-snug">{c.name}</h3>
-                  <p className="mt-1 text-xs text-muted-foreground">{c.short}</p>
-                </div>
-              </Link>
+              <CategoryCard key={c.slug} category={c} />
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -181,21 +158,21 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Featured products */}
+      {/* More categories */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
             eyebrow="Popular lines"
-            title="Featured products"
-            description="A selection of fast-moving products from our catalogue. Enquire for current availability and pricing."
+            title="More from our catalogue"
+            description="Every category is stocked in original manufacturer packing. Send an enquiry for availability and pricing."
           />
           <Button asChild variant="soft" size="lg">
-            <Link to="/products">All products</Link>
+            <Link to="/products">Browse categories</Link>
           </Button>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((p) => (
-            <ProductCard key={p.slug} product={p} />
+          {categories.slice(8).map((c) => (
+            <CategoryCard key={c.slug} category={c} />
           ))}
         </div>
       </section>

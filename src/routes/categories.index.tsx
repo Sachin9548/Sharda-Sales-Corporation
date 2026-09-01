@@ -1,8 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
 
+import { CategoryCard } from "@/components/category-card";
 import { PageHero } from "@/components/page-hero";
-import { categories, productsByCategory } from "@/data/catalog";
+import { categories } from "@/data/catalog";
 
 export const Route = createFileRoute("/categories/")({
   head: () => ({
@@ -29,36 +29,13 @@ function CategoriesPage() {
       <PageHero
         eyebrow="Categories"
         title="Twelve categories, one dependable source"
-        description="Every category below is stocked at our Indore warehouse and supplied in original manufacturer packing. Select a category to view its products."
+        description="Every category below is stocked at our Indore warehouse and supplied in original manufacturer packing. Share your requirement and we will quote availability and pricing."
       />
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => (
-            <Link
-              key={c.slug}
-              to="/categories/$slug"
-              params={{ slug: c.slug }}
-              className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-soft transition-shadow hover:shadow-lift"
-            >
-              <div className="aspect-16/10 overflow-hidden">
-                <img
-                  src={c.image}
-                  alt={`${c.name} category`}
-                  width={900}
-                  height={700}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-1 flex-col p-5">
-                <h2 className="font-display text-base font-semibold leading-snug">{c.name}</h2>
-                <p className="mt-2 flex-1 text-sm text-muted-foreground">{c.short}</p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                  {productsByCategory(c.slug).length} products <ArrowRight className="size-4" />
-                </span>
-              </div>
-            </Link>
+            <CategoryCard key={c.slug} category={c} />
           ))}
         </div>
       </section>
