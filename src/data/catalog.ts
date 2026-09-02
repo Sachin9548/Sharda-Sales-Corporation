@@ -3,7 +3,6 @@
  * Everything shown on the site (company info, categories, products, brands,
  * certificates, testimonials) is edited from this one file.
  */
-
 import catFlavours from "@/assets/cat-flavours.jpg";
 import catColours from "@/assets/food-colours .png";
 import catPremix from "@/assets/cat-premix.jpg";
