@@ -5,7 +5,7 @@
  */
 
 import catFlavours from "@/assets/cat-flavours.jpg";
-import catColours from "@/assets/cat-colours.jpg";
+import catColours from "@/assets/food-colours .png";
 import catPremix from "@/assets/cat-premix.jpg";
 import catCocoa from "@/assets/cat-cocoa.jpg";
 import catDairy from "@/assets/cat-dairy.jpg";
@@ -18,8 +18,8 @@ import catPackaging from "@/assets/cat-packaging.jpg";
 import catTesting from "@/assets/cat-testing.jpg";
 import catFlavours2 from "@/assets/cat-flavours-2.jpg";
 import catFlavours3 from "@/assets/cat-flavours-3.jpg";
-import catColours2 from "@/assets/cat-colours-2.jpg";
-import catColours3 from "@/assets/cat-colours-3.jpg";
+import catColours2 from "@/assets/idacol-orange-red.jpg";
+import catColours3 from "@/assets/idacol-tartrazine-food.jpg";
 import catPremix2 from "@/assets/cat-premix-2.jpg";
 import catPremix3 from "@/assets/cat-premix-3.jpg";
 import catCocoa2 from "@/assets/cat-cocoa-2.jpg";
@@ -73,7 +73,7 @@ export type Category = {
   images: string[];
 };
 
-export const categories: Category[] = [
+export const categories: Category[] = [ 
   {
     slug: "flavours-emulsions",
     name: "Flavours & Emulsions",
