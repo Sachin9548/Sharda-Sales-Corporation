@@ -5,8 +5,8 @@
  */
 import catFlavours from "@/assets/cat-flavours.jpg";
 import catColours from "@/assets/food-colours .png";
-import catPremix from "@/assets/cat-premix.jpg";
-import catCocoa from "@/assets/cat-cocoa.jpg";
+import catPremix from "@/assets/catPremix4.jpeg";
+import catCocoa from "@/assets/catCocoa4.jpeg";
 import catDairy from "@/assets/cat-dairy.jpg";
 import catAdditives from "@/assets/cat-additives.jpg";
 import catGums from "@/assets/cat-gums.jpg";
@@ -14,15 +14,15 @@ import catJams from "@/assets/cat-jams.jpg";
 import catBakery from "@/assets/cat-bakery.jpg";
 import catBeverages from "@/assets/cat-beverages.jpg";
 import catPackaging from "@/assets/cat-packaging.jpg";
-import catTesting from "@/assets/cat-testing.jpg";
+import catTesting from "@/assets/catTesting4.jpeg";
 import catFlavours2 from "@/assets/cat-flavours-2.jpg";
 import catFlavours3 from "@/assets/cat-flavours-3.jpg";
 import catColours2 from "@/assets/idacol-orange-red.jpg";
 import catColours3 from "@/assets/idacol-tartrazine-food.jpg";
-import catPremix2 from "@/assets/cat-premix-2.jpg";
-import catPremix3 from "@/assets/cat-premix-3.jpg";
-import catCocoa2 from "@/assets/cat-cocoa-2.jpg";
-import catCocoa3 from "@/assets/cat-cocoa-3.jpg";
+import catPremix2 from "@/assets/catPremix5.jpeg";
+import catPremix3 from "@/assets/catPremix6.jpeg";
+import catCocoa2 from "@/assets/catCocoa5.jpeg";
+import catCocoa3 from "@/assets/catCocoa6.jpeg";
 import catDairy2 from "@/assets/cat-dairy-2.jpg";
 import catDairy3 from "@/assets/cat-dairy-3.jpg";
 import catAdditives2 from "@/assets/cat-additives-2.jpg";
@@ -37,8 +37,8 @@ import catBeverages2 from "@/assets/cat-beverages-2.jpg";
 import catBeverages3 from "@/assets/cat-beverages-3.jpg";
 import catPackaging2 from "@/assets/cat-packaging-2.jpg";
 import catPackaging3 from "@/assets/cat-packaging-3.jpg";
-import catTesting2 from "@/assets/cat-testing-2.jpg";
-import catTesting3 from "@/assets/cat-testing-3.jpg";
+import catTesting2 from "@/assets/catTesting5.jpeg";
+import catTesting3 from "@/assets/catTesting6.jpeg";
 
 export const company = {
   name: "Sharda Sales Corporation",
@@ -82,6 +82,7 @@ export const categories: Category[] = [
     image: catFlavours,
     images: [catFlavours, catFlavours2, catFlavours3],
   },
+  // done
   {
     slug: "food-colours",
     name: "Food Colours",
@@ -91,6 +92,7 @@ export const categories: Category[] = [
     image: catColours,
     images: [catColours, catColours2, catColours3],
   },
+  // done 
   {
     slug: "bakery-premixes",
     name: "Bakery Premixes, Cake Mixes & Bases",
@@ -100,6 +102,7 @@ export const categories: Category[] = [
     image: catPremix,
     images: [catPremix, catPremix2, catPremix3],
   },
+  // done 
   {
     slug: "chocolates-compounds-cocoa",
     name: "Chocolates, Compounds, Pastes & Cocoa",
@@ -172,6 +175,7 @@ export const categories: Category[] = [
     image: catPackaging,
     images: [catPackaging, catPackaging2, catPackaging3],
   },
+  // done
   {
     slug: "testing-kits-misc",
     name: "Testing Kits, Fragrances & Miscellaneous",

@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import { categories, company } from "@/data/catalog";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo2.png";
 
 export function SiteFooter() {
   return (

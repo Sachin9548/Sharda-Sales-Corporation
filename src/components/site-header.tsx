@@ -4,7 +4,7 @@ import { Menu, Phone, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/catalog";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo2.png";
 
 const nav = [
   { to: "/", label: "Home" },
